@@ -9,3 +9,73 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(/src/assets/fonts/Roboto-Black.ttf);
+}
+.d-block {
+    display: block !important;
+}
+.checked {
+    color: orange;
+}
+.white {
+    color: #FFF;
+}
+body {
+    direction: rtl;
+}
+.text-center {
+    text-align: center;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.mx-auto {
+    margin: auto !important;
+}
+//Tags
+.tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.tags li {
+    float: right;
+    margin-right: 10px;
+    list-style: none !important;
+}
+.tag {
+    background-color: #6c9df4;
+    border-radius: 3px 0 0 3px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 26px;
+    padding: 0 20px 0 20px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+.tag:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 6px;
+    height: 0px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.5);
+}
+
+//for small Modal
+.dialog-modal .modal-wrapper {
+    width: 70%;
+    height: 40%;
+}

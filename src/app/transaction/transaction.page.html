@@ -1,0 +1,74 @@
+<ion-header translucent="true">
+  <ion-toolbar color="primary">
+
+    <ion-buttons slot="start">
+      <ion-button (click)="endTransaction()">
+        <ion-icon slot="icon-only" name="locate"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      المعاملات اضافة
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/notifications']">
+        <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>معلومات المعاملة</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="text-center">
+
+      <ion-item text-wrap>
+        <ion-label position="stacked">
+          عنوان المعاملة
+
+          <p>
+            <ion-icon name="person"></ion-icon>
+            <span>احمد</span>
+            <ion-icon name="timer"></ion-icon>
+            <span>منذ 5 دقيقة</span>
+          </p>
+        </ion-label>
+
+        <ion-note slot="end">
+          <span class="open-staus">مفتوح</span>
+        </ion-note>
+      </ion-item>
+
+      <ion-item>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas voluptate, fugit non hic ut recusandae odit maiores reiciendis nam aliquam ullam odio enim eius, rerum obcaecati dolor quae tempore quasi.
+        </p>
+      </ion-item>
+
+      <ion-item>
+          <ul class="tags">
+              <li><a class="tag">معاملة</a></li>
+              <li><a class="tag">معاملة</a></li>
+              <li><a class="tag">معاملة</a></li>
+              <li><a class="tag">معاملة</a></li>
+              <li><a class="tag">معاملة</a></li>
+            </ul>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="text-center">
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">نص العرض</ion-label>
+        <ion-textarea rows="6"></ion-textarea>
+      </ion-item>
+      <ion-button color="primary">تقديم</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="text-center">
+      <ion-card-content>
+        <ion-button fill="outline" (click)="allOffers()" color="primary">رؤية جميع العروض</ion-button>
+      </ion-card-content></ion-card>
+</ion-content>

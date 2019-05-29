@@ -1,6 +1,8 @@
 {
   "name": "moakeb",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "bb7ceb3d"
 }

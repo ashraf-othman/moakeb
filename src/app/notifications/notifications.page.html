@@ -1,0 +1,53 @@
+<ion-header translucent="true">
+  <ion-toolbar slot="start" color="primary">
+    <ion-title>الاشعارات</ion-title>
+    <ion-buttons slot="end">
+        <ion-back-button color="danger" icon="add" text="رجوع"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list lines="inset">
+
+    <ion-item>
+      <ion-avatar slot="start" [routerLink]="['/user']" [queryParams]="id">
+        <img src="assets/img/user.jpg" alt="">
+      </ion-avatar>
+      <ion-label text-wrap>
+        <p>قام باضافة معاملة جديدة</p>
+        <ion-icon name="person"></ion-icon>
+        <span>احمد</span>
+        <ion-icon name="timer"></ion-icon>
+        <span>منذو 12 ساعة</span>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start" [routerLink]="['/user']" [queryParams]="id">
+        <img src="assets/img/user.jpg" alt="">
+      </ion-avatar>
+      <ion-label text-wrap>
+        <p>قام باضافة معاملة جديدة</p>
+        <ion-icon name="person"></ion-icon>
+        <span>احمد</span>
+        <ion-icon name="timer"></ion-icon>
+        <span>منذو 12 ساعة</span>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start" [routerLink]="['/user']" [queryParams]="id">
+        <img src="assets/img/user.jpg" alt="">
+      </ion-avatar>
+      <ion-label text-wrap>
+        <p>قام باضافة معاملة جديدة</p>
+        <ion-icon name="person"></ion-icon>
+        <span>احمد</span>
+        <ion-icon name="timer"></ion-icon>
+        <span>منذو 12 ساعة</span>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

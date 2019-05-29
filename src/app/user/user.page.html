@@ -1,0 +1,108 @@
+<ion-content lines="inset">
+  <ion-toolbar color="primary">
+
+    <ion-title>
+      عرفات امين
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/notifications']">
+        <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/']">
+        <ion-icon slot="icon-only" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-card id="headerCard" color="primary">
+    <ion-card-content class="no-padding text-center mx-auto">
+      <ion-avatar>
+        <img src="assets/img/user.jpg" alt="img" />
+      </ion-avatar>
+      <br />
+      <ion-label><b>مصر _ القاهره</b></ion-label>
+      <br />
+      <ion-label><b><a href="tel:222-3333444555" class="white">222-3333444555</a></b></ion-label>
+      <br />
+
+      <ion-note slot="end">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star white"></span>
+        <span class="fa fa-star white"></span>
+      </ion-note>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        نبذة عنا
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      عرفات امين: اختصاص اداب ودعارة
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        المعاملات
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ul class="tags">
+        <li><a class="tag">معاملة</a></li>
+        <li><a class="tag">معاملة</a></li>
+        <li><a class="tag">معاملة</a></li>
+        <li><a class="tag">معاملة</a></li>
+        <li><a class="tag">معاملة</a></li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>المعاملات النجزة</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding text-center">
+      <ion-list lines="inset" class="userworks">
+
+        <ion-item slot="start">
+          <ion-avatar slot="start" [routerLink]="['/user']" [queryParams]="{id: '1'}">
+            <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" class="d-block" />
+          </ion-avatar>
+          <ion-label text-wrap [routerLink]="['/transaction']" [queryParams]="{id:'1'}">
+            <p>تسيير الحصول علي اقامة</p>
+            <ion-icon name="person"></ion-icon>
+            <span>احمد</span>
+            <ion-icon name="timer"></ion-icon>
+            <span>منذو 20 دقيقة</span>
+            <ion-icon name="logo-buffer"></ion-icon>
+            <span>عروض</span>
+          </ion-label>
+          <ion-note slot="end">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </ion-note>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="text-center">
+    <ion-card-content>
+      <ion-button fill="outline" color="primary" (click)="moakebAchievments()" >
+        المعاملات المنجزة
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<!-- (click)="moakebAchievments()"  -->

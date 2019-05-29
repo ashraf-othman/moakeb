@@ -1,0 +1,37 @@
+<ion-header translucent="true">
+  <ion-toolbar color="primary">
+    <ion-title>المعاملات المنجزه</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>المعاملات المنجزة</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="no-padding text-center">
+      <ion-list lines="inset" id="userWorks">
+            <ion-item>
+              <ion-avatar slot="start" (click)="closeModal()" [routerLink]="['/user']" [queryParams]="{id: '1'}">
+                <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" class="d-block" />
+              </ion-avatar>
+              <ion-label text-wrap (click)="closeModal()" [routerLink]="['/transaction']" [queryParams]="{id: '1'}">
+                <p>تسيير الحصول علي اقامة</p>
+                <ion-icon name="person"></ion-icon>
+                <span>احمد</span>
+                <ion-icon name="timer"></ion-icon>
+                <span>منذو 20 دقيقة</span>
+              </ion-label>
+              <ion-note slot="end">
+                عروض خاصة
+              </ion-note>
+            </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

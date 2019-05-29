@@ -1,9 +1,68 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content lines="inset">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/notifications']">
+        <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
 
-<ion-content></ion-content>
+    <ion-title> صفحتي</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/']">
+        <ion-icon slot="icon-only" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+  <ion-card color="primary">
+    <ion-card-content>
+      <ion-avatar>
+        <img src="assets/img/user.jpg" alt="img" />
+      </ion-avatar>
+      <br />
+      <ion-label id="username" slot="start">
+        <b>عرفات امين</b>
+      </ion-label>
+      <br>
+      <ion-note slot="end">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star white"></span>
+        <span class="fa fa-star white"></span>
+      </ion-note>
+    </ion-card-content>
+  </ion-card>
+  <ion-item lines="inset">
+    <ion-textarea placeholder="ادخل المعاملة التي تحتاج"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">اختيار تصنيف المعاملة</ion-label>
+    <ion-select multiple="true" cancelText="الغاء" okText="اخيار">
+      <ion-select-option value="bacon">Bacon</ion-select-option>
+      <ion-select-option value="olives">Black Olives</ion-select-option>
+      <ion-select-option value="xcheese">Extra Cheese</ion-select-option>
+      <ion-select-option value="peppers">Green Peppers</ion-select-option>
+      <ion-select-option value="mushrooms">Mushrooms</ion-select-option>
+      <ion-select-option value="onions">Onions</ion-select-option>
+      <ion-select-option value="pepperoni">Pepperoni</ion-select-option>
+      <ion-select-option value="pineapple">Pineapple</ion-select-option>
+      <ion-select-option value="sausage">Sausage</ion-select-option>
+      <ion-select-option value="Spinach">Spinach</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked"> الموقع الجغرافي</ion-label>
+    <p>مصر</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked"> الجوال</ion-label>
+    <p>
+
+      <ion-input type="number" placeholder="222 4444 5555 66678"></ion-input>
+    </p>
+  </ion-item>
+</ion-content>

@@ -1,9 +1,87 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header translucent="true">
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab Two
+      المعاملات
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/notifications']">
+        <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-radio-group>
+
+        <ion-item>
+          <ion-label>جميع المعاملات</ion-label>
+          <ion-radio checked="true" value="all"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>معاملاتي</ion-label>
+          <ion-radio checked="true" value="mine"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list lines="inset">
+
+    <ion-item [routerLink]="['/transaction']" [queryParams]="{id: '1'}">
+      <ion-avatar slot="start">
+        <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" class="d-block" />
+      </ion-avatar>
+      <ion-label text-wrap>
+        <p>تسيير الحصول علي اقامة</p>
+        <ion-icon name="person"></ion-icon>
+        <span>احمد</span>
+        <ion-icon name="timer"></ion-icon>
+        <span>منذو 20 دقيقة</span>
+      </ion-label>
+      <ion-note slot="end">
+        عروض خاصة
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" class="d-block" />
+      </ion-avatar>
+      <ion-label text-wrap>
+        <p>تسيير الحصول علي اقامة</p>
+        <ion-icon name="person"></ion-icon>
+        <span>احمد</span>
+        <ion-icon name="timer"></ion-icon>
+        <span>منذو 20 دقيقة</span>
+      </ion-label>
+      <ion-note solt="end">
+        عروض خاصة
+      </ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" class="d-block" />
+      </ion-avatar>
+      <ion-label text-wrap>
+        <p>تسيير الحصول علي اقامة</p>
+        <ion-icon name="person"></ion-icon>
+        <span>احمد</span>
+        <ion-icon name="timer"></ion-icon>
+        <span>منذو 20 دقيقة</span>
+      </ion-label>
+      <ion-note slot="end">
+        عروض خاصة
+      </ion-note>
+    </ion-item>
+
+  </ion-list>
+  <ion-fab [routerLink]="['/add-transaction']" vertical="bottom" horizontal="start" edge="false" slot="fixed">
+    <ion-fab-button translucent="true" color="primary">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

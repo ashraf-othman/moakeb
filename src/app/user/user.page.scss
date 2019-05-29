@@ -1,0 +1,25 @@
+ion-card:first-of-type {
+    margin: 0;
+    padding: 20px 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: linear-gradient(to bottom, #6097f0, #2f6fdd, #77a3ee) !important;
+    background: linear-gradient(to bottom, #6097f0, #2f6fdd, #77a3ee) !important;
+    text-align: center;
+    ion-avatar {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+}
+ion-card:first-of-type ion-card-content {
+    text-align: center;
+    margin: 0 auto;
+}
+img {
+    width: 120px;
+    margin: 0 auto;
+}
